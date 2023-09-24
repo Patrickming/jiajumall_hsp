@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
+    <script>
+
+
+
+        function bubbleSort(arr) {
+            console.log("排序前：", arr);
+            let len = arr.length;
+            for (let i = 0; i < len - 1; i++) {
+                for (let j = 0; j < len - 1 - i; j++) {
+                    if (arr[j] > arr[j + 1]) {
+                        let temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+                console.log("排序中：", arr);
+            }
+            console.log("排序后：", arr);
+            return arr;
+        }
+
+
+    </script>
+</head>
+
+
+<body>
+
+</body>
+</html>
